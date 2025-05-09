@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaFragment">
+
+    <fragment
+        android:id="@+id/anaFragment"
+        android:name="com.gulfemervaaltun.navigation_uygulamas.anaFragment"
+        android:label="fragment_ana"
+        tools:layout="@layout/fragment_ana" >
+        <action
+            android:id="@+id/action_anaFragment_to_aFragment"
+            app:destination="@id/aFragment" />
+        <action
+            android:id="@+id/action_anaFragment_to_xFragment"
+            app:destination="@id/xFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aFragment"
+        android:name="com.gulfemervaaltun.navigation_uygulamas.aFragment"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_aFragment_to_bFragment"
+            app:destination="@id/bFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bFragment"
+        android:name="com.gulfemervaaltun.navigation_uygulamas.bFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_bFragment_to_yFragment"
+            app:destination="@id/yFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xFragment"
+        android:name="com.gulfemervaaltun.navigation_uygulamas.xFragment"
+        android:label="fragment_x"
+        tools:layout="@layout/fragment_x" >
+        <action
+            android:id="@+id/action_xFragment_to_yFragment"
+            app:destination="@id/yFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yFragment"
+        android:name="com.gulfemervaaltun.navigation_uygulamas.yFragment"
+        android:label="fragment_y"
+        tools:layout="@layout/fragment_y" />
+</navigation>
